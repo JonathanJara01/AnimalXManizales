@@ -3,7 +3,6 @@ import imagenHome from '../assets/cropped-logo-diagonal-1536x672.png';
 import imagenLogo from '../assets/AnimalX-1Recurso-1.svg'
 import Logo from './Logo';
 import LogoPrincipal from '../assets/logosssRecurso 3@4x.png'
-import LogoAnimal from '../assets/Logo Reveal All.mp4'
 import Bombea from '../assets/BombeaAnimalX.jpg'
 import AnimalIngles from '../assets/AnimalXingles.jpg'
 
@@ -12,26 +11,18 @@ import style from './home.module.css';
 import Video from './Video';
 import Video1 from './Video1';
 import Video2 from './Video2';
-import ReactPlayer from 'react-player';
 import Footer from './Footer';
+
 
 const Home = () => {
   return (
   <div>
-    <div className="container">
-      <div className="d-flex align-items-center justify-content-center rounded-circle">
+    <div className="container ">
+      <div className="d-flex align-items-center justify-content-center animate__animated animate__flip">
           <img src={imagenLogo} height='200px' alt="Logo" />
-          <ReactPlayer
-                url={LogoAnimal}
-                width='20%'
-                height='100%'
-                playing={true}
-                loop={true}
-                controls={true}
-          /> 
       </div>
             {/* VIDEO E IMAGEN ANIMALX */}
-      <div className="d-flex align-items-center justify-content-center rounded-5rem">
+      <div className="d-flex align-items-center justify-content-center animate__animated animate__slideInDown">
           <Video/>
         <div>
           <img src={imagenHome} height='350px'/>
@@ -50,7 +41,7 @@ const Home = () => {
             </div>
             {/* IMAGEN REFOCUS */}
             <Logo/>
-            <div className="d-flex align-items-center justify-content-center rounded-5rem">
+            <div className="d-flex align-items-center justify-content-center">
             <img src={Bombea} height='350px' alt="Bombea" />
             <Video2/>
             <img src={AnimalIngles} height='350px' alt="AnimalIngles" />

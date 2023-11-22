@@ -12,6 +12,7 @@ const Video2 = () => {
         height='100%'
         controls={true}  // Puedes usar controls sin comillas para indicar que es un valor booleano
         playing={true}
+        volume={0}
       />
     </div>
   )
